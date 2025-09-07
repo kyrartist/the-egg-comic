@@ -1,0 +1,54 @@
+html,
+body {
+  min-height: 300vh;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 {
+    background-color: aqua;
+}
+
+.section-2 {
+    background-color: brown;
+}
+
+.section-3 {
+  background-color: cornflowerblue;
+}
+
+.section-4 {
+  background-color: darkseagreen;
+  min-height: 400vh;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 5rem;
+  /* height: 300vh; THIS SHOULD BE SAME AS BODY min-height !!! */
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: darkblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
