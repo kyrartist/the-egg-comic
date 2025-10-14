@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 //SECTION 2
   //boxes fade-in
-  gsap.from([".box-a2", ".box-b2", ".box-c2"], {
+  gsap.from([".box-a2", ".box-b2", ".box-c2", ".box-d2", ".box-e2", ".box-f2"], {
     scrollTrigger: {
         trigger: ".section-2",
         start: "top 70%", //starts the fade in animation when the top of section 3 reaches 70% line down from top of viewport
@@ -42,16 +42,63 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 //SECTION 3 
   //boxes fade-in
-  gsap.from([".box-a3", ".box-b3", ".box-c3"], {
+  gsap.from([".box-a3"], {
     scrollTrigger: {
         trigger: ".section-3",
-        start: "top 70%", //starts the fade in animation when the top of section 3 reaches 70% line down from top of viewport
+        start: "top 50%", //starts the fade in animation when the top of section 3 reaches 70% line down from top of viewport
         toggleActions: "restart none none reverse" //animation restarts when off screen
     },
     opacity: 0,
     y: 50,
     duration: 1,
     stagger: 0.3, 
+  })
+
+//SECTION 5
+  //overlay box fades in and out
+  gsap.from([".box-c5"], {
+    scrollTrigger: {
+        trigger: ".section-5",
+        start: "top 50%", //starts the fade in animation when the top of section 5 reaches 50% line down from top of viewport
+        toggleActions: "restart none none reverse", //animation restarts when off screen
+        scrub: true,
+   },
+    opacity: 0,
+  })
+
+//SECTION 7
+  gsap.to([".box-a7"], {
+    scrollTrigger: {
+      trigger: ".section-7",
+      start: "top top",
+      pin: true,
+      end: "+=2000",
+      scrub: 2,
+    },
+    y: 400,
+    x: 1000,
+  })
+
+//SECTION 8
+  gsap.to([".box-b8"], {
+    scrollTrigger: {
+      trigger: ".box-b8",
+      start: "top top",
+      pin: true,
+      end: "+=2000",
+    },
+  })
+
+//SECTION 9
+  gsap.to([".box-a9"], {
+    scrollTrigger: {
+      trigger: ".section-9",
+      start: "top top",
+      pin: true,
+      end: "+=2000",
+      scrub: 2,
+    },
+    x: 4500,
   })
 
 //SECTION 14
