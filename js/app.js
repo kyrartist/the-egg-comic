@@ -1,11 +1,6 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-//   gsap.to(".box", {
-//     rotation: 360,
-//     duration: 2,
-//   })
-
 //SMOOTHSCROLL EFFECT
   let smoother = ScrollSmoother.create({
     smooth: 2,
@@ -14,25 +9,36 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 //SECTION 1
   //car crash
-  gsap.to([".box-a1"], {
+  gsap.to([".box-1a"], {
     scrollTrigger: {
-      trigger: ".box-a1",
+      trigger: ".box-1a",
       start: "top 80%",
       scrub: true,
     },
     opacity: 100,
-    // scale: 2,
-    width: "1200px",
-    height: "1000px"
+    width: "180vw",
+    height: "100%"
   })
 
 //SECTION 2
   //boxes fade-in
-  gsap.from([".box-a2", ".box-b2", ".box-c2", ".box-d2", ".box-e2", ".box-f2"], {
+  gsap.from([".box-2a", ".box-2b", ".box-2c"], {
     scrollTrigger: {
-        trigger: ".section-2",
-        start: "top 70%", //starts the fade in animation when the top of section 3 reaches 70% line down from top of viewport
-        toggleActions: "restart none none reverse" //animation restarts when off screen
+        trigger: ".box-2a",
+        start: "top 60%", //starts the fade in animation when the top of section 2 reaches 50% line down from top of viewport
+        toggleActions: "play none none none" 
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.3, 
+  })
+
+  gsap.from([".box-2d", ".box-2e", ".box-2f"], {
+    scrollTrigger: {
+        trigger: ".box-2d",
+        start: "top 60%", //starts the fade in animation when the top of section 2 reaches 50% line down from top of viewport
+        toggleActions: "play none none none" 
     },
     opacity: 0,
     y: 50,
@@ -42,11 +48,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 //SECTION 3 
   //boxes fade-in
-  gsap.from([".box-a3"], {
+  gsap.from([".box-3a"], {
     scrollTrigger: {
         trigger: ".section-3",
-        start: "top 50%", //starts the fade in animation when the top of section 3 reaches 70% line down from top of viewport
-        toggleActions: "restart none none reverse" //animation restarts when off screen
+        start: "top 30%", //starts the fade in animation when the top of section 3 reaches 30% line down from top of viewport
+        toggleActions: "play none none none" //animation plays only once
     },
     opacity: 0,
     y: 50,
@@ -56,33 +62,59 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 //SECTION 5
   //overlay box fades in and out
-  gsap.from([".box-c5"], {
+  gsap.from([".box-5c"], {
     scrollTrigger: {
-        trigger: ".section-5",
-        start: "top 50%", //starts the fade in animation when the top of section 5 reaches 50% line down from top of viewport
+        trigger: ".box-5c",
+        start: "top 40%", //starts the fade in animation when the top of section 5 reaches 50% line down from top of viewport
         toggleActions: "restart none none reverse", //animation restarts when off screen
         scrub: true,
+        end: "top 5%",
    },
     opacity: 0,
   })
 
+//SECTION 6
+  //boxes fade-in
+  gsap.from([".box-6a", ".box-6b", ".box-6c"], {
+    scrollTrigger: {
+        trigger: ".section-6",
+        start: "top 50%", //starts the fade in animation when the top of section 2 reaches 50% line down from top of viewport
+        toggleActions: "play none none none" 
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.3, 
+  })
+
 //SECTION 7
-  gsap.to([".box-a7"], {
+  gsap.to([".box-7a"], {
     scrollTrigger: {
       trigger: ".section-7",
       start: "top top",
-      pin: true,
-      end: "+=2000",
+      // pin: true,
+      // end: "+=2000",
       scrub: 2,
     },
-    y: 400,
-    x: 1000,
+    left: "80%",
+    top: "80%",
   })
 
+  // gsap.from([".h1"], {
+  //   scrollTrigger: {
+  //       trigger: ".box-7a",
+  //       start: "top 10%",
+  //       toggleActions: "restart none none reverse", //animation restarts when off screen
+  //       scrub: true,
+  //       end: "top 5%",
+  //  },
+  //   opacity: 0,
+  // })
+
 //SECTION 8
-  gsap.to([".box-b8"], {
+  gsap.to([".box-8b"], {
     scrollTrigger: {
-      trigger: ".box-b8",
+      trigger: ".box-8b",
       start: "top top",
       pin: true,
       end: "+=2000",
@@ -90,7 +122,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   })
 
 //SECTION 9
-  gsap.to([".box-a9"], {
+  gsap.to([".box-9a"], {
     scrollTrigger: {
       trigger: ".section-9",
       start: "top top",
@@ -103,7 +135,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 //SECTION 14
   //box-a fade-in
-  gsap.from([".box-a14"], {
+  gsap.from([".box-14a"], {
     scrollTrigger: {
       trigger: ".section-14",
       start: "top 50%",

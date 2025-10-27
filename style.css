@@ -1,5 +1,5 @@
 :root {
-  --blue-background: rgb(17, 17, 49);
+  --blue-background: #08080D;
   --panel-background: rgb(97, 112, 181);
 }
 
@@ -25,6 +25,10 @@ body {
   font-size: large;
   color: white;
   text-align: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300;
 }
 
 section {
@@ -68,7 +72,9 @@ section {
 }
 
 .section-7 {
-  /* background-color: var(--blue-background); */
+  /* background-image: url(img/7b.png); */
+  /* background-position: center center; */
+  /* background-size: cover; */
   position: relative;
   min-height: 200vh;
 }
@@ -108,44 +114,52 @@ section {
 }
 
 .box {
-  height: 250px;
-  width: 250px;
-  background-color: var(--panel-background);
+  height: 290px;
+  width: 290px;
+  /* background-color: var(--panel-background); */
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  position: relative;
+  overflow: visible;
 }
 
 .box-wide {
   height: 250px;
   width: 700px;
-  background-color: var(--panel-background);
+  /* background-color: var(--panel-background); */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  position: relative;
+  overflow: visible;
 }
 
 .box-thin {
-  height: 250px;
-  width: 100px;
-  background-color: var(--panel-background);
+  height: 310px;
+  width: 250px;
+  /* background-color: var(--panel-background); */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  position: relative;
+  overflow: visible;
 }
 
 .box-small {
   height: 100px;
   width: 100px;
-  background-color: var(--panel-background);
+  /* background-color: var(--panel-background); */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  position: relative;
+  overflow: visible;
 }
 
 img {
@@ -154,9 +168,57 @@ img {
   object-fit: contain;
 }
 
-.dialogue {
-  position: fixed;
+.human {
+  position: absolute; /* positions relative to parent box */
   background-color: white;
+  border: 2px, solid black;
+  border-radius: 50%;
+
+  word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: black;
-  font-size: 18px;
+  opacity: 80%;
+  font-size: 16px;
+  font-family: "Edu SA Beginner", sans-serif;
+  font-weight: 450;
+
+  padding: 16px;
+  width: fit-content; 
+  height: fit-content; 
 }
+
+.god {
+  position: absolute; /* positions relative to parent box */
+  background-color: black;
+  border: 2px, solid white;
+  border-radius: 50%;
+  
+  word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  opacity: 80%;
+  font-size: 13px;
+  font-family: "Merriweather", serif;
+
+  padding: 16px;
+  width: fit-content; 
+  height: fit-content; 
+
+  /* animation: bob 3s ease-in-out infinite; */
+}
+
+@keyframes bob {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px); /* adjust the height of the bob */
+  }
+}
+
