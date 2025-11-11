@@ -41,7 +41,7 @@ section {
 
 .section-1 {
     background-color: black;
-    height: 2500px;
+    height: 450vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -80,9 +80,13 @@ section {
 }
 
 .section-8 {
-  margin-top: 500vh;
+  margin-top: 30vh;
   flex-direction: column;
-  margin-bottom: 300vh;
+  margin-bottom: 100vh;
+}
+
+.section-8 .prose {
+  margin-top: 400px;
 }
 
 .section-9 {
@@ -91,6 +95,14 @@ section {
   position: relative;
   margin-bottom: 300vh;
 
+}
+
+.section-10 {
+  height: 200vh;
+}
+
+.section-11 {
+  height: 600vh;
 }
 
 .section-14 {
