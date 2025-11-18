@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   gsap.from([".box-2a", ".box-2b", ".box-2c"], {
     scrollTrigger: {
         trigger: ".box-2a",
-        start: "top 80%", //starts the fade in animation when the top of section 2 reaches 50% line down from top of viewport
+        start: "top 80%", 
         toggleActions: "play none none none" 
     },
     opacity: 0,
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   gsap.from([".box-2d", ".box-2e", ".box-2f"], {
     scrollTrigger: {
         trigger: ".box-2d",
-        start: "top 80%", //starts the fade in animation when the top of section 2 reaches 50% line down from top of viewport
+        start: "top 80%", //starts the fade in animation when the top of section 2 reaches 80% line down from top of viewport
         toggleActions: "play none none none" 
     },
     opacity: 0,
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   gsap.from([".box-3a"], {
     scrollTrigger: {
         trigger: ".section-3",
-        start: "top 30%", //starts the fade in animation when the top of section 3 reaches 30% line down from top of viewport
+        start: "top 50%", //starts the fade in animation when the top of section 3 reaches 50% line down from top of viewport
         toggleActions: "play none none none" //animation plays only once
     },
     opacity: 0,
@@ -197,10 +197,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: ".section-9",
       start: "top top",
       pin: true,
-      end: "+=2000",
+      end: "+=1600",
       scrub: 3,
     },
-    x: -4500,
+    x: -5000,
   })
 
 //SECTION 11

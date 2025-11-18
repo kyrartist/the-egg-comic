@@ -32,11 +32,13 @@ body {
 }
 
 section {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url(img/7bstars.png);
+  background-size: cover;
 }
 
 .section-1 {
@@ -46,6 +48,7 @@ section {
     justify-content: center;
     flex-direction: column;
     padding-bottom: 500px;
+    background-image: none;
 }
 
 .section-1 p {
@@ -103,6 +106,12 @@ section {
 
 .section-11 {
   height: 600vh;
+  background-image: none;
+}
+
+.section-12-wideshot {
+  width: 100vw; 
+  position: relative;
 }
 
 .section-14 {
@@ -230,7 +239,7 @@ img {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-3px); /* adjust the height of the bob */
+    transform: translateY(-5px); /* adjust the height of the bob */
   }
 }
 
