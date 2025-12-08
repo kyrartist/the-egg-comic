@@ -13,6 +13,11 @@ body {
   flex-direction: column;
 }
 
+audio {
+  font-family: "Edu SA Beginner", sans-serif;
+  font-weight: 450;
+}
+
 /*centers sections within body*/
 #smooth-content {
   display: flex;
@@ -119,7 +124,24 @@ section {
   min-height: 400vh;
 }
 
-.section-17 {
+.section-15 .box-wide {
+  margin-bottom: 100px;
+}
+
+.section-15 .prose {
+  margin: 50px 0 50px 0;
+}
+
+.section-15 .box {
+  width: 300px;
+  height: 300px;
+}
+
+.section-15 .box img {
+  object-fit: cover;
+}
+
+.section-18 {
   background: linear-gradient(var(--blue-background), white);
   min-height: 300vh;
 }
@@ -135,8 +157,9 @@ section {
 }
 
 .box {
-  height: 290px;
-  width: 290px;
+  width: 22.5vw;
+  /* height: 290px;
+  width: 290px; */
   /* background-color: var(--panel-background); */
   color: white;
   display: flex;
@@ -148,8 +171,9 @@ section {
 }
 
 .box-wide {
-  height: 250px;
-  width: 700px;
+  width: 55vw;
+  /* height: 250px; */
+  /* width: 700px; */
   /* background-color: var(--panel-background); */
   display: flex;
   align-items: center;
@@ -175,6 +199,17 @@ section {
   height: 100px;
   width: 100px;
   /* background-color: var(--panel-background); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  position: relative;
+  overflow: visible;
+}
+
+.box-s14 {
+  height: 310px;
+  width: 140px;
   display: flex;
   align-items: center;
   justify-content: center;

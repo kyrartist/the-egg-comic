@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     });
 
+//MUSIC STARTS
+
+
 //SECTION 1
   //car crash
   gsap.to([".box-1a"], {
@@ -146,7 +149,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     stagger: 0.7,
   })
 
-  gsap.from([".g3"], {
+  gsap.from([".g3, .g4"], {
     scrollTrigger: {
         trigger: ".g3",
         start: "top 70%", //starts the fade in animation when the top of section 3 reaches 30% line down from top of viewport
@@ -155,6 +158,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     opacity: 0,
     y: 20,
     duration: 1,
+    stagger: 0.7,
   })
 
 //SECTION 8
@@ -203,6 +207,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
     x: -5000,
   })
 
+//SECTION 10 
+  gsap.from([".box-10a", ".box-10b", ".box-10c"], {
+    scrollTrigger: {
+        trigger: ".box-10a",
+        start: "top 80%", 
+        toggleActions: "play none none none" 
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.3, 
+  })
+
 //SECTION 11
   gsap.to([".box-11a"], {
     scrollTrigger: {
@@ -220,8 +237,85 @@ document.addEventListener("DOMContentLoaded", (event) => {
     scrollTrigger: {
       trigger: ".section-14",
       start: "top 50%",
-      toggleActions: "restart none none reverse"
+      toggleActions: "restart none none reverse",
     },
+    opacity: 0,
+  })
+
+//SECTION 15
+  gsap.from([".box-15c"], {
+    scrollTrigger: {
+      trigger: ".section-15-2",
+      start: "bottom 95%",
+      end: "bottom 85%",
+      scrub: 3,
+      toggleActions: "restart none none reverse",
+    },
+    x: -500,
+  })
+
+  gsap.from([".box-15d"], {
+    scrollTrigger: {
+      trigger: ".section-15-2",
+      start: "bottom 95%",
+      end: "bottom 85%",
+      scrub: 3,
+      toggleActions: "restart none none reverse",
+    },
+    x: -300,
+  })
+
+  gsap.from([".box-15e"], {
+    scrollTrigger: {
+      trigger: ".section-15-2",
+      start: "bottom 95%",
+      end: "bottom 85%",
+      scrub: 3,
+      toggleActions: "restart none none reverse",
+    },
+    x: 300,
+  })
+
+  gsap.from([".box-15f"], {
+    scrollTrigger: {
+      trigger: ".section-15-2",
+      start: "bottom 95%",
+      end: "bottom 85%",
+      scrub: 3,
+      toggleActions: "restart none none reverse",
+    },
+    x: 500,
+  })
+
+//SECTION 17
+  gsap.to([".box-17a"], {
+    scrollTrigger: {
+      trigger: ".box-17a",
+      start: "top top",
+      pin: true,
+      end: "+=1200",
+    },
+  })
+
+  gsap.from([".box-17b"], {
+    scrollTrigger: {
+        trigger: ".section-17",
+        start: "top 5%", 
+        toggleActions: "restart none none reverse", 
+        scrub: true,
+        end: "+=1000",
+   },
+    opacity: 0,
+  })
+  
+  gsap.from([".box-17c"], {
+    scrollTrigger: {
+        trigger: ".section-17",
+        start: "top 5%", 
+        toggleActions: "restart none none reverse", 
+        scrub: true,
+        end: "+=1000",
+   },
     opacity: 0,
   })
 
