@@ -1,422 +1,730 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Egg</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap" rel="stylesheet">  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="smooth-content">
-
       <section class="intro">
         <div>
-          <img src="img/Title.gif" alt="" style="width: 50vw;">
+          <img src="img/Title.gif" alt="" style="width: 50vw" />
         </div>
       </section>
 
-      <div class="prose" style="margin-bottom: 20px;">Please read with sound :)</div>
-      <audio id="bg-music" controls loop style="margin-bottom: 100px;">
-        <source src="music/theeggclean.mp3" type="audio/mpeg">
+      <div class="prose" style="margin-bottom: 20px">Music:</div>
+      <audio id="bg-music" controls loop style="margin-bottom: 100px">
+        <source src="music/theeggclean.mp3" type="audio/mpeg" />
       </audio>
 
       <!-- SECTION 1: you died, that's when you met me... -->
-       <section class="section-1" id="trigger-section">
+      <section class="section-1" id="trigger-section">
         <p class="prose">You were on your way home when you died.</p>
-        <p class="prose">It was a car accident. Nothing particularly remarkable, but fatal nonetheless.</p>
-        <div class="box-wide box-1a" style="opacity: 0; margin-bottom: 50vh; width: 0; height: 0;">
-          <img src="img/1a.png" alt="">
+        <p class="prose">
+          It was a car accident. Nothing particularly remarkable, but fatal
+          nonetheless.
+        </p>
+        <div
+          class="box-wide box-1a"
+          style="opacity: 0; margin-bottom: 50vh; width: 0; height: 0"
+        >
+          <img src="img/1a.png" alt="" />
         </div>
-        <p class="prose">You left behind a wife and two children. It was a painless death.</p>
-        <p class="prose">The EMTs tried their best to save you, but to no avail. 
-          Your body was so utterly shattered you were better off, trust me.</p>
-        <p class="prose" style="margin-bottom: 50vh;">And that’s when you met me.</p>
-       </section>
+        <p class="prose">
+          You left behind a wife and two children. It was a painless death.
+        </p>
+        <p class="prose">
+          The EMTs tried their best to save you, but to no avail. Your body was
+          so utterly shattered you were better off, trust me.
+        </p>
+        <p class="prose" style="margin-bottom: 50vh">
+          And that’s when you met me.
+        </p>
+      </section>
 
       <!-- SECTION 2: what happened? -->
-       <section class="section-2">
-        <div class="boxes" style="padding-bottom: 1rem; margin-top: 50vh;" data-speed="1.1">
+      <section class="section-2">
+        <div
+          class="boxes"
+          style="padding-bottom: 1rem; margin-top: 50vh"
+          data-speed="1.1"
+        >
           <div class="box box-2a">
-            <img src="img/2a.png" alt="">
+            <img src="img/2a.webp" alt="" />
           </div>
           <div class="box box-2b">
-            <img src="img/2b.png" alt="">
+            <img src="img/2b.webp" alt="" />
           </div>
           <div class="box box-2c">
-            <img src="img/2c.PNG" alt="">
-            <div class="human" style="right: 72%; bottom: 65%; min-width: 80px;">What… what happened? Where am I?</div>
-            <div class="god" style="left: 70%; top: 30%; white-space: nowrap;">You died.</div>
-            <div class="human" style="top: 45%; right: 67%; min-width: 80px;">There was a… a truck and it was skidding…</div>
-            <div class="god" style="top: 72%; left: 75%;">Yup.</div>
+            <img src="img/2c.webp" alt="" />
+            <div class="human" style="right: 72%; bottom: 65%; min-width: 80px">
+              What… what happened? Where am I?
+            </div>
+            <div class="god" style="left: 70%; top: 30%; white-space: nowrap">
+              You died.
+            </div>
+            <div class="human" style="top: 45%; right: 67%; min-width: 80px">
+              There was a… a truck and it was skidding…
+            </div>
+            <div class="god" style="top: 72%; left: 75%">Yup.</div>
           </div>
         </div>
         <div class="boxes" data-speed="1.1">
           <div class="box box-2d">
-            <img src="img/2d.PNG" alt="">
-            <div class="human" style="right: 80%; bottom: 70%; white-space: nowrap;">I… I died?</div>
-            <div class="god" style="left: 60%; top: 85%; min-width: 110px;">Yup. But don’t feel bad about it. Everyone dies.</div>
-          </div>
-          <div class="box box-2e">
-            <img src="img/2e.PNG" alt="">
-            <div class="human" style="bottom: 65%; right: 70%; width: 80px;">What is this place? Is this the afterlife?</div>
-            <div class="god" style="bottom: 70%; left: 80%;">More or less.</div>
-          </div>
-          <div class="box box-2f">
-            <img src="img/2f.PNG" alt="">
-            <div class="human" style="right: 60%; bottom: 45%;">Are you god?</div>
-          </div>
-        </div>
-       </section>
-
-      <!-- SECTION 3: yup, I'm god -->
-       <section class="section-3">
-        <div class="boxes" data-speed="1.1">
-          <div class="box-wide box-3a" style="width: 900px; height: 500px;">
-            <img src="img/3a.png" alt="">
-            <div class="god" style="right: 65%; bottom: 55%;">Yup</div>
-            <div class="god" style="left: 65%; top: 55%;">I'm God.</div>
-          </div>
-        </div>
-       </section>
-
-      <!-- SECTION 4: what about my family? -->
-       <section class="section-4">
-        <div class="box-wide box-4a" style="height: 450px;" data-speed="1.1">
-          <img src="img/4a.png" alt="">
-          <div class="human" style="top: 8%; left: 35%; width: 70px;">My kids… my wife!</div>
-          <div class="god" style="top: 25%; left: 50%; width: 80px;">What about them?</div>
-          <div class="human" style="top: 40%; left: 35%; width: 80px;">Will they be all right?</div>
-          <div class="god" style="top: 62%; width: 160px; height: 100px; left: 40%;">That’s what I like to see. You just died and your main concern is for your family. 
-            That’s good stuff right there.</div>
-        </div>
-       </section>
-
-      <!-- SECTION 5: you looked at me with fascination -->
-       <section class="section-5">
-        <div class="boxes" data-speed="1.1">
-          <p class="prose" style="position: absolute; margin-bottom: 450px;">You looked at me with fascination.</p>
-          <div class="box box-5a">
-            <img src="img/5a.png" alt="">
-          </div>
-          <div class="box-wide box-5b" style="position: relative; width: 600px;">
-            <img src="img/5b.png" style="position: absolute; height: 300px;" alt="">
-            <div class="box-5c" style="position: absolute; height: 300px; width: 600px;">
-              <img src="img/5c.png" alt="">
+            <img src="img/2d.webp" alt="" />
+            <div
+              class="human"
+              style="right: 80%; bottom: 70%; white-space: nowrap"
+            >
+              I… I died?
+            </div>
+            <div class="god" style="left: 60%; top: 85%; min-width: 110px">
+              Yup. But don’t feel bad about it. Everyone dies.
             </div>
           </div>
-          <p class="prose" style="position: absolute; margin-top: 450px;"> To you, I didn’t look like God. 
-            <br>I just looked like some man. Or possibly a woman. Some vague authority figure, maybe. 
-            <br>More of a grammar school teacher than the almighty.</p>
+          <div class="box box-2e">
+            <img src="img/2e.webp" alt="" />
+            <div class="human" style="bottom: 65%; right: 70%; width: 80px">
+              What is this place? Is this the afterlife?
+            </div>
+            <div class="god" style="bottom: 70%; left: 80%">More or less.</div>
+          </div>
+          <div class="box box-2f">
+            <img src="img/2f.webp" alt="" />
+            <div class="human" style="right: 60%; bottom: 45%">
+              Are you god?
+            </div>
+          </div>
         </div>
-       </section>
+      </section>
+
+      <!-- SECTION 3: yup, I'm god -->
+      <section class="section-3">
+        <div class="boxes" data-speed="1.1">
+          <div class="box-wide box-3a" style="width: 900px; height: 500px">
+            <img src="img/3a.webp" alt="" />
+            <div class="god" style="right: 65%; bottom: 55%">Yup</div>
+            <div class="god" style="left: 65%; top: 55%">I'm God.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: what about my family? -->
+      <section class="section-4">
+        <div class="box-wide box-4a" style="height: 450px" data-speed="1.1">
+          <img src="img/4a.webp" alt="" />
+          <div class="human" style="top: 8%; left: 35%; width: 70px">
+            My kids… my wife!
+          </div>
+          <div class="god" style="top: 25%; left: 50%; width: 80px">
+            What about them?
+          </div>
+          <div class="human" style="top: 40%; left: 35%; width: 80px">
+            Will they be all right?
+          </div>
+          <div
+            class="god"
+            style="top: 62%; width: 160px; height: 100px; left: 40%"
+          >
+            That’s what I like to see. You just died and your main concern is
+            for your family. That’s good stuff right there.
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: you looked at me with fascination -->
+      <section class="section-5">
+        <div class="boxes" data-speed="1.1">
+          <p class="prose" style="position: absolute; margin-bottom: 450px">
+            You looked at me with fascination.
+          </p>
+          <div class="box box-5a">
+            <img src="img/5a.webp" alt="" />
+          </div>
+          <div class="box-wide box-5b" style="position: relative; width: 600px">
+            <img
+              src="img/5b.webp"
+              style="position: absolute; height: 300px"
+              alt=""
+            />
+            <div
+              class="box-5c"
+              style="position: absolute; height: 300px; width: 600px"
+            >
+              <img src="img/5c.webp" alt="" />
+            </div>
+          </div>
+          <p class="prose" style="position: absolute; margin-top: 450px">
+            To you, I didn’t look like God. <br />I just looked like some man.
+            Or possibly a woman. Some vague authority figure, maybe. <br />More
+            of a grammar school teacher than the almighty.
+          </p>
+        </div>
+      </section>
 
       <!-- SECTION 6: all religions are right in their own way -->
-       <section class="section-6">
+      <section class="section-6">
         <div class="boxes" data-speed="1.1">
           <div class="box-thin box-6a">
-            <img src="img/6a.png" alt="">
-            <div class="god" style="right: 75%; bottom: 65%; min-width: 90px;">Don’t worry, they'll be fine.</div>
-            <div class="god" style="left: 60%; top: 75%; min-width: 90px;">Your kids will remember you as perfect in every way.</div>
+            <img src="img/6a.webp" alt="" />
+            <div class="god" style="right: 75%; bottom: 65%; min-width: 90px">
+              Don’t worry, they'll be fine.
+            </div>
+            <div class="god" style="left: 60%; top: 75%; min-width: 90px">
+              Your kids will remember you as perfect in every way.
+            </div>
           </div>
           <div class="box-thin box-6b">
-            <img src="img/6b.png" alt="">
-            <div class="god" style="min-width: 270px; height: 100px; bottom: 65%; border-radius: 30%;">They didn’t have time to grow contempt for you. Your wife will cry on the outside, but will be secretly relieved.
-               To be fair, your marriage was falling apart. If it’s any consolation, she’ll feel very guilty for feeling relieved.</div>
+            <img src="img/6b.webp" alt="" />
+            <div
+              class="god"
+              style="
+                min-width: 270px;
+                height: 100px;
+                bottom: 65%;
+                border-radius: 30%;
+              "
+            >
+              They didn’t have time to grow contempt for you. Your wife will cry
+              on the outside, but will be secretly relieved. To be fair, your
+              marriage was falling apart. If it’s any consolation, she’ll feel
+              very guilty for feeling relieved.
+            </div>
           </div>
           <div class="box-thin box-6c">
-            <img src="img/6c.png" alt="">
-            <div class="human" style="bottom: 70%;">Oh.</div>
+            <img src="img/6c.webp" alt="" />
+            <div class="human" style="bottom: 70%">Oh.</div>
           </div>
         </div>
-        <div class="box-wide box-6d" data-speed="1.1" style="height: 200px;">
-          <div class="human" style="right: 71%; bottom: 55%; width: 120px;">So what happens now? Do I go to heaven or hell or something?</div>
-          <div class="god" style="right: 55%; top: 30%; width: 80px;">Neither, you’ll be reincarnated.</div>
-          <div class="human" style="right: 39%; bottom: 55%; width: 75px;">Ah, so the Hindus were right.</div>
-          <div class="god" style="right: 18%; bottom: 52%; width: 100px;">All religions are right in their own way.</div>
-          <div class="god" style="right: 10%; bottom: 35%;">Walk with me.</div>
+        <div class="box-wide box-6d" data-speed="1.1" style="height: 200px">
+          <div class="human" style="right: 71%; bottom: 55%; width: 120px">
+            So what happens now? Do I go to heaven or hell or something?
+          </div>
+          <div class="god" style="right: 55%; top: 30%; width: 80px">
+            Neither, you’ll be reincarnated.
+          </div>
+          <div class="human" style="right: 39%; bottom: 55%; width: 75px">
+            Ah, so the Hindus were right.
+          </div>
+          <div class="god" style="right: 18%; bottom: 52%; width: 100px">
+            All religions are right in their own way.
+          </div>
+          <div class="god" style="right: 10%; bottom: 35%">Walk with me.</div>
         </div>
-       </section>
+      </section>
 
       <!-- SECTION 7: you followed along as we strode through the void -->
-       <section class="section-7">
+      <section class="section-7">
         <div>
-          <img src="img/7b.png" style="width: 100%;" alt="">
+          <img src="img/7b.png" style="width: 100%" alt="" />
         </div>
-        <div class="box-small box-7a" style="width: 250px; height: 250px; position: absolute; left: 5%; top: 5%;">
-          <img src="img/7a.gif" alt="">
+        <div
+          class="box-small box-7a"
+          style="
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            left: 5%;
+            top: 5%;
+          "
+        >
+          <img src="img/7a.gif" alt="" />
         </div>
-        <div class="human h1" style="left: 5%; top: 1%;">Where are we going?</div>
-        <div class="god g1" style="left: 30%; top: 10%; width: 100px;">Nowhere in particular. It’s just nice to walk while we talk.</div>
-        <div class="human h2" style="left: 10%; top: 30%; width: 100px;">So what’s the point, then?</div>
-        <div class="human h3" style="left: 12%; top: 35%; width: 130px;">When I get reborn, I’ll just be a blank slate, right? A baby.</div>
-        <div class="human h4" style="left: 60%; top: 40%; width: 130px;">So all my experiences and everything I did in this life won’t matter.</div>
-        <div class="god g2" style="left: 65%; top: 45%;">Not so!</div>
-        <div class="god g3" style="left: 40%; top: 65%; width: 140px;">You have within you all the knowledge and experiences of all your past lives.</div>
-        <div class="god g4" style="left: 50%; top: 69%; width: 120px;;">You just don’t remember them right now.</div>
-       </section>
+        <div class="human h1" style="left: 5%; top: 1%">
+          Where are we going?
+        </div>
+        <div class="god g1" style="left: 30%; top: 10%; width: 100px">
+          Nowhere in particular. It’s just nice to walk while we talk.
+        </div>
+        <div class="human h2" style="left: 10%; top: 30%; width: 100px">
+          So what’s the point, then?
+        </div>
+        <div class="human h3" style="left: 12%; top: 35%; width: 130px">
+          When I get reborn, I’ll just be a blank slate, right? A baby.
+        </div>
+        <div class="human h4" style="left: 60%; top: 40%; width: 130px">
+          So all my experiences and everything I did in this life won’t matter.
+        </div>
+        <div class="god g2" style="left: 65%; top: 45%">Not so!</div>
+        <div class="god g3" style="left: 40%; top: 65%; width: 140px">
+          You have within you all the knowledge and experiences of all your past
+          lives.
+        </div>
+        <div class="god g4" style="left: 50%; top: 69%; width: 120px">
+          You just don’t remember them right now.
+        </div>
+      </section>
 
       <!-- SECTION 8: Your soul is more magnificent, beautiful, and gigantic than you can possibly imagine -->
-       <section class="section-8">
+      <section class="section-8">
         <div class="boxes" data-speed="1.1">
           <div class="box box-8a">
-            <img src="img/8a.png" alt="">
+            <img src="img/8a.webp" alt="" />
           </div>
           <div class="box box-8b">
-            <img src="img/8b.png" alt="">
+            <img src="img/8b.webp" alt="" />
           </div>
         </div>
-        <div class="box box-8c" style="position: relative; width: 100vw; height: 100vh;" data-speed="1.1">
-          <img class="box-8c-img" src="img/8c.png" style="position: absolute;" alt="">
-          <div class="box box-8d" style="position: absolute; width: 100vw; height: 100vh;">
-             <img src="img/8dgif.gif" alt="">
+        <div
+          class="box box-8c"
+          style="position: relative; width: 100vw; height: 100vh"
+          data-speed="1.1"
+        >
+          <img
+            class="box-8c-img"
+            src="img/8c.webp"
+            style="position: absolute"
+            alt=""
+          />
+          <div
+            class="box box-8d"
+            style="position: absolute; width: 100vw; height: 100vh"
+          >
+            <img src="img/8dgif.gif" alt="" />
           </div>
         </div>
         <div data-speed="1.1">
-          <div class="prose">Your soul is more magnificent, beautiful, and gigantic than you can possibly imagine. </div>
-        <div class="prose">A human mind can only contain a tiny fraction of what you are.</div>
-        <div class="prose">It’s like sticking your finger in a glass of water to see if it’s hot or cold.</div>
-        <div class="prose">You put a tiny part of yourself into the vessel, and when you bring it back out, you’ve gained all the experiences it had.</div>
+          <div class="prose">
+            Your soul is more magnificent, beautiful, and gigantic than you can
+            possibly imagine.
+          </div>
+          <div class="prose">
+            A human mind can only contain a tiny fraction of what you are.
+          </div>
+          <div class="prose">
+            It’s like sticking your finger in a glass of water to see if it’s
+            hot or cold.
+          </div>
+          <div class="prose">
+            You put a tiny part of yourself into the vessel, and when you bring
+            it back out, you’ve gained all the experiences it had.
+          </div>
         </div>
-        
-       </section>
+      </section>
 
       <!-- SECTION 9: human for the last 48 years...immense consciousness -->
-       <section class="section-9">
+      <section class="section-9">
         <div class="boxes boxes-9">
-          <div class="prose">You’ve been in a human for the last 48 years, so you haven’t stretched out yet and felt the rest of your immense consciousness. 
-            If we hung out here for long enough, you’d start remembering everything. 
-            But there’s no point to doing that between each life.</div>
-          <div class="box box-9a" style="width: 3000px; left: 2000px; position: absolute;">
-            <img src="img/9a.png" alt="">
+          <div class="prose">
+            You’ve been in a human for the last 48 years, so you haven’t
+            stretched out yet and felt the rest of your immense consciousness.
+            If we hung out here for long enough, you’d start remembering
+            everything. But there’s no point to doing that between each life.
+          </div>
+          <div
+            class="box box-9a"
+            style="width: 3000px; left: 2000px; position: absolute"
+          >
+            <img src="img/9a.webp" alt="" />
           </div>
         </div>
-       </section>
+      </section>
 
       <!-- SECTION 10: This time around, you’ll be a Chinese peasant girl in 540 AD -- Wait what?! -->
-       <section class="section-10" style="position: relative;">
+      <section class="section-10" style="position: relative">
         <div class="boxes" data-speed="1.1">
           <div class="box box-10a">
-            <img src="img/10a.png" alt="">
-            <div class="human" style="left: 45%; top: 75%; width: 120px;">How many times have I been reincarnated, then?</div>
+            <img src="img/10a.webp" alt="" />
+            <div class="human" style="left: 45%; top: 75%; width: 120px">
+              How many times have I been reincarnated, then?
+            </div>
           </div>
           <div class="box box-10b">
-            <img src="img/10b.png" alt="">
-            <div class="god" style="left: 30%; bottom: 80%; width: 90px;">Oh lots. Lots and lots. And in to lots of different lives.</div>
-            <div class="god" style="left: 70%; top: 80%; width: 90px;">This time around, you’ll be a Chinese peasant girl in 540 AD.</div>
+            <img src="img/10b.png" alt="" />
+            <div class="god" style="left: 30%; bottom: 80%; width: 90px">
+              Oh lots. Lots and lots. And in to lots of different lives.
+            </div>
+            <div class="god" style="left: 70%; top: 80%; width: 90px">
+              This time around, you’ll be a Chinese peasant girl in 540 AD.
+            </div>
           </div>
           <div class="box box-10c">
-            <img src="img/10c.png" alt="">
-            <div class="human" style="right: 70%; bottom: 65%; width: 80px;">Wait, what? You’re sending me back in time?</div>
-          </div>
-        </div>
-        <div class="box-wide" style="position: absolute; top: 65%; height: 200px;" data-speed="1.1">
-          <div class="god" style="width: 140px; right: 50%;">Well, I guess technically. Time, as you know it, only exists in your universe. Things are different where I come from.</div>
-          <div class="human" style="left: 55%; width: 80px;">Where you come from?</div>
-        </div>
-       </section>
-
-      <!-- SECTION 11: I come from somewhere. Somewhere else. And there are others like me. -->
-       <section class="section-11" style="position: relative;"> 
-        <div class="box-11a" style="width: 200vw; position: absolute; top: 0; left: 0;">
-          <img src="img/11a.png" alt="">
-          <div class="god" style="left: 25%; top: 5%;">Oh sure</div>
-          <div class="god" style="left: 29%; top: 9%; width: 170px;">I come from somewhere. Somewhere else. And there are others like me.</div>
-          <div class="god" style="left: 50%; top: 85%; transform: translate(-50%, -50%); width: 150px;">I know you’ll want to know what it’s like there, but honestly you wouldn’t understand.</div>
-        </div>
-        <div class="box-11b" style="width: 90vw;">
-          <img src="img/11b.png" alt="">
-          <div class="human" style="top: 34%; width: 200px; left: 41.3%;">Oh. But wait. If I get reincarnated to other places in time, I could have interacted with myself at some point.</div>
-          <div class="god" style="left: 20%; top: 40%; width: 100px;">Sure. Happens all the time.</div>
-          <div class="god" style="width: 150px; left: 70%; top: 45%;">And with both lives only aware of their own lifespan you don’t even know it’s happening.</div>
-        </div>
-       </section>
-
-      <!-- SECTION 12: Seriously? You’re asking me for the meaning of life? Isn’t that a little stereotypical? -->
-       <section class="section-12" style="display: relative;">
-        <div class="boxes" style="display: flex; flex-direction: column;" data-speed="1.1">
-          <div class="box box-12a" style="width: 300px; height: 500px;">
-            <img src="img/12a.png" alt="">
-            <div class="human" style="width: 100px; left: 60%; top: 12%;">So what’s the point of it all?</div>
-            <div class="god" style="left: 75%; top: 25%;">Seriously?</div>
-            <div class="god" style="width: 125px; left: 1%; top: 50%;">Seriously? You’re asking me for the meaning of life? Isn’t that a little stereotypical?</div>
-            <div class="human" style="width: 120px; right: 55%; top: 71%;">Well it’s a reasonable question.</div>
-          </div>
-        </div>
-        <div class="boxes" data-speed="1.1">
-          <div class="box box-12c" style="position: relative; width: 300px; height: 500px;">
-            <img src="img/12c.png" alt="" style="position: absolute;">
-            <div class="god" style="width: 140px; right: 70%; top: 5%;">The meaning of life, the reason I made this whole universe, is for you to mature.</div>
-            <div class="human" style="width: 100px; left: 75%; top: 15%;">You mean mankind? You want us to mature?</div>
-            <div class="god" style="width: 100px; right: 85%; top: 30%;">No, just you. I made this whole universe for you.</div>
-            <div class="god" style="width: 140px; left: 85%; top: 42%;">With each new life you grow and mature and become a larger and greater intellect.</div>
-            <div style="width: 500px; position: absolute;">
-              <img src="img/12d.png" alt="" style="animation: bob 3s ease-in-out infinite;">
+            <img src="img/10c.png" alt="" />
+            <div class="human" style="right: 70%; bottom: 65%; width: 80px">
+              Wait, what? You’re sending me back in time?
             </div>
           </div>
         </div>
-       </section>
+        <div
+          class="box-wide"
+          style="position: absolute; top: 65%; height: 200px"
+          data-speed="1.1"
+        >
+          <div class="god" style="width: 140px; right: 50%">
+            Well, I guess technically. Time, as you know it, only exists in your
+            universe. Things are different where I come from.
+          </div>
+          <div class="human" style="left: 55%; width: 80px">
+            Where you come from?
+          </div>
+        </div>
+      </section>
 
-       <div class="section-12-wideshot" style="margin-top: 200px;">
-        <img src="img/12e.png" alt="" style="position: absolute;">
-        <div style="position: absolute;" data-speed=".85">
-          <img src="img/12f.png" alt="">
+      <!-- SECTION 11: I come from somewhere. Somewhere else. And there are others like me. -->
+      <section class="section-11" style="position: relative">
+        <div
+          class="box-11a"
+          style="width: 200vw; position: absolute; top: 0; left: 0"
+        >
+          <img src="img/11a.png" alt="" />
+          <div class="god" style="left: 25%; top: 5%">Oh sure</div>
+          <div class="god" style="left: 29%; top: 9%; width: 170px">
+            I come from somewhere. Somewhere else. And there are others like me.
+          </div>
+          <div
+            class="god"
+            style="
+              left: 50%;
+              top: 85%;
+              transform: translate(-50%, -50%);
+              width: 150px;
+            "
+          >
+            I know you’ll want to know what it’s like there, but honestly you
+            wouldn’t understand.
+          </div>
         </div>
-        <div style="position: absolute;" data-speed=".9">
-          <img src="img/12g.png" alt="">
+        <div class="box-11b" style="width: 90vw">
+          <img src="img/11b.png" alt="" />
+          <div class="human" style="top: 34%; width: 200px; left: 41.3%">
+            Oh. But wait. If I get reincarnated to other places in time, I could
+            have interacted with myself at some point.
+          </div>
+          <div class="god" style="left: 20%; top: 40%; width: 100px">
+            Sure. Happens all the time.
+          </div>
+          <div class="god" style="width: 150px; left: 70%; top: 45%">
+            And with both lives only aware of their own lifespan you don’t even
+            know it’s happening.
+          </div>
         </div>
-        <div style="position: absolute;" data-speed=".95">
-          <img src="img/12h.png" alt="" style="animation: bob 3s ease-in-out infinite;">
-          <div class="god" style="position: absolute; left: 22%; top: 30%;">There is no one else.</div>
-          <div class="god" style="width: 150px; left: 70%; top: 60%;">In this universe,<br> there’s just you and me.</div>
+      </section>
+
+      <!-- SECTION 12: Seriously? You’re asking me for the meaning of life? Isn’t that a little stereotypical? -->
+      <section class="section-12" style="display: relative">
+        <div
+          class="boxes"
+          style="display: flex; flex-direction: column"
+          data-speed="1.1"
+        >
+          <div class="box box-12a" style="width: 300px; height: 500px">
+            <img src="img/12a.png" alt="" />
+            <div class="human" style="width: 100px; left: 60%; top: 12%">
+              So what’s the point of it all?
+            </div>
+            <div class="god" style="left: 75%; top: 25%">Seriously?</div>
+            <div class="god" style="width: 125px; left: 1%; top: 50%">
+              Seriously? You’re asking me for the meaning of life? Isn’t that a
+              little stereotypical?
+            </div>
+            <div class="human" style="width: 120px; right: 55%; top: 71%">
+              Well it’s a reasonable question.
+            </div>
+          </div>
         </div>
-        <div class="human" style="width: 100px; left: 45%; bottom: 99%;">Just me? What about everyone else?</div>
-        
-       </div>
+        <div class="boxes" data-speed="1.1">
+          <div
+            class="box box-12c"
+            style="position: relative; width: 300px; height: 500px"
+          >
+            <img src="img/12c.png" alt="" style="position: absolute" />
+            <div class="god" style="width: 140px; right: 70%; top: 5%">
+              The meaning of life, the reason I made this whole universe, is for
+              you to mature.
+            </div>
+            <div class="human" style="width: 100px; left: 75%; top: 15%">
+              You mean mankind? You want us to mature?
+            </div>
+            <div class="god" style="width: 100px; right: 85%; top: 30%">
+              No, just you. I made this whole universe for you.
+            </div>
+            <div class="god" style="width: 140px; left: 85%; top: 42%">
+              With each new life you grow and mature and become a larger and
+              greater intellect.
+            </div>
+            <div style="width: 500px; position: absolute">
+              <img
+                src="img/12d.png"
+                alt=""
+                style="animation: bob 3s ease-in-out infinite"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-12-wideshot" style="margin-top: 200px">
+        <img src="img/12e.png" alt="" style="position: absolute" />
+        <div style="position: absolute" data-speed=".85">
+          <img src="img/12f.png" alt="" />
+        </div>
+        <div style="position: absolute" data-speed=".9">
+          <img src="img/12g.png" alt="" />
+        </div>
+        <div style="position: absolute" data-speed=".95">
+          <img
+            src="img/12h.png"
+            alt=""
+            style="animation: bob 3s ease-in-out infinite"
+          />
+          <div class="god" style="position: absolute; left: 22%; top: 30%">
+            There is no one else.
+          </div>
+          <div class="god" style="width: 150px; left: 70%; top: 60%">
+            In this universe,<br />
+            there’s just you and me.
+          </div>
+        </div>
+        <div class="human" style="width: 100px; left: 45%; bottom: 99%">
+          Just me? What about everyone else?
+        </div>
+      </div>
 
       <!-- SECTION 13: Wait. I’m everyone!? -->
-       <section class="section-13" style="margin-top: 200vh; display: flex; flex-direction: column;">
+      <section
+        class="section-13"
+        style="margin-top: 200vh; display: flex; flex-direction: column"
+      >
         <div class="boxes" data-speed="1.1">
           <div class="box box-13a">
-            <img src="img/13a.png" alt="">
-            <div class="human" style="width: 100px; left: 60%; top: 10%;">But all the people on earth…</div>
+            <img src="img/13a.png" alt="" />
+            <div class="human" style="width: 100px; left: 60%; top: 10%">
+              But all the people on earth…
+            </div>
           </div>
           <div class="box box-13b">
-            <img src="img/13b.png" alt="">
-            <div class="god" style="width: 100px; right: 60%; top: 30%;">All you. Different incarnations of you.</div>
+            <img src="img/13b.png" alt="" />
+            <div class="god" style="width: 100px; right: 60%; top: 30%">
+              All you. Different incarnations of you.
+            </div>
           </div>
           <div class="box box-13c">
-            <img src="img/13c.png" alt="">
-            <div class="human" style="width: 50px; right: 80%; bottom: 75%;">Wait. I’m everyone!?</div>
-            <div class="god" style="width: 100px; left: 75%; bottom: 60%;">Now you’re getting it!</div>
+            <img src="img/13c.png" alt="" />
+            <div class="human" style="width: 50px; right: 80%; bottom: 75%">
+              Wait. I’m everyone!?
+            </div>
+            <div class="god" style="width: 100px; left: 75%; bottom: 60%">
+              Now you’re getting it!
+            </div>
           </div>
         </div>
-        <div class="box-wide" data-speed="1.1" style="height: 300px;">
-          <div class="human" style="width: 100px; right: 75%; bottom: 80%;">I’m every human being who ever lived?</div>
-          <div class="god" style="width: 100px; right: 60%; bottom: 70%;">Or who will ever live, yes.</div>
-          <div class="human" style="width: 100px; left: 40%; bottom: 80%;">I’m Abraham Lincoln?</div>
-          <div class="god" style="width: 100px; left: 52%; bottom: 60%;">And you’re John Wilkes Booth, too.</div>
-          <div class="human" style="left: 80%; bottom: 70%;">I’m Hitler?</div>
+        <div class="box-wide" data-speed="1.1" style="height: 300px">
+          <div class="human" style="width: 100px; right: 75%; bottom: 80%">
+            I’m every human being who ever lived?
+          </div>
+          <div class="god" style="width: 100px; right: 60%; bottom: 70%">
+            Or who will ever live, yes.
+          </div>
+          <div class="human" style="width: 100px; left: 40%; bottom: 80%">
+            I’m Abraham Lincoln?
+          </div>
+          <div class="god" style="width: 100px; left: 52%; bottom: 60%">
+            And you’re John Wilkes Booth, too.
+          </div>
+          <div class="human" style="left: 80%; bottom: 70%">I’m Hitler?</div>
         </div>
-       </section>
+      </section>
 
       <!-- SECTION 14: and you're the millions he killed -->
-       <div class="prose" data-speed="1.1">And you’re the millions he killed.</div>
-       <section class="section-14">
+      <div class="prose" data-speed="1.1">
+        And you’re the millions he killed.
+      </div>
+      <section class="section-14">
         <div class="boxes">
           <div class="box-s14 box-14a" data-speed=".4">
-            <img src="img/14a.png" alt="">
+            <img src="img/14a.png" alt="" />
           </div>
           <div class="box-s14 box-14b" data-speed=".6">
-            <img src="img/14b.png" alt="">
+            <img src="img/14b.png" alt="" />
           </div>
           <div class="box-s14 box-14c" data-speed=".8">
-            <img src="img/14c.png" alt="">
+            <img src="img/14c.png" alt="" />
           </div>
           <div class="box-s14 box-14d" data-speed="1.001">
-            <img src="img/14d.png" alt="">
+            <img src="img/14d.png" alt="" />
           </div>
           <div class="box-s14 box-14e" data-speed="1.2">
-            <img src="img/14e.png" alt="">
+            <img src="img/14e.png" alt="" />
           </div>
           <div class="box-s14 box-14f" data-speed="1.4">
-            <img src="img/14f.png" alt="">
+            <img src="img/14f.png" alt="" />
           </div>
           <div class="box-s14 box-14g" data-speed="1.6">
-            <img src="img/14g.png" alt="">
+            <img src="img/14g.png" alt="" />
           </div>
         </div>
-       </section>
-       <div class="box" style="height: 200px;" data-speed="1.1">
+      </section>
+      <div class="box" style="height: 200px" data-speed="1.1">
         <div class="human">I’m Jesus?</div>
-       </div>
-       <div class="prose" style="margin-bottom: 200px;" data-speed="1.1">And you’re everyone who followed him.</div>
+      </div>
+      <div class="prose" style="margin-bottom: 200px" data-speed="1.1">
+        And you’re everyone who followed him.
+      </div>
 
       <!-- SECTION 15: Every time you victimized someone, you were victimizing yourself -->
-       <section class="section-15" style="display: flex; flex-direction: column;">
-        <div style="display: flex; flex-direction: column;">
-          <div class="prose" data-speed="1.1">Every time you victimized someone, you were victimizing yourself.</div>
-          <div class="box-15a" data-speed="1.1" style="width: 50vw; margin: 0 auto;">
-            <img src="img/15a.png" alt="">
+      <section class="section-15" style="display: flex; flex-direction: column">
+        <div style="display: flex; flex-direction: column">
+          <div class="prose" data-speed="1.1">
+            Every time you victimized someone, you were victimizing yourself.
           </div>
-          <div class="prose" data-speed="1.1">Every act of kindness you’ve done, you’ve done to yourself.</div>
-          <div class="box-15b" data-speed="1.1" style="width: 50vw; margin: 0 auto;">
-            <img src="img/15b.png" alt="">
+          <div
+            class="box-15a"
+            data-speed="1.1"
+            style="width: 50vw; margin: 0 auto"
+          >
+            <img src="img/15a.png" alt="" />
           </div>
-          <div class="prose" data-speed="1.1">Every happy and sad moment ever experienced by any human was, <br>or will be, experienced by you.</div>
+          <div class="prose" data-speed="1.1">
+            Every act of kindness you’ve done, you’ve done to yourself.
+          </div>
+          <div
+            class="box-15b"
+            data-speed="1.1"
+            style="width: 50vw; margin: 0 auto"
+          >
+            <img src="img/15b.png" alt="" />
+          </div>
+          <div class="prose" data-speed="1.1">
+            Every happy and sad moment ever experienced by any human was,
+            <br />or will be, experienced by you.
+          </div>
         </div>
-        <div class="section-15-2" style="position: relative;">
-          <div class="box box-15c" style="position: absolute;">
-            <img src="img/15c.png" alt="">
+        <div class="section-15-2" style="position: relative">
+          <div class="box box-15c" style="position: absolute">
+            <img src="img/15c.png" alt="" />
           </div>
-          <div class="box box-15d" style="position: absolute;">
-            <img src="img/15d.png" alt="">
+          <div class="box box-15d" style="position: absolute">
+            <img src="img/15d.png" alt="" />
           </div>
-          <div class="box box-15e" style="position: absolute;">
-            <img src="img/15e.png" alt="">
+          <div class="box box-15e" style="position: absolute">
+            <img src="img/15e.png" alt="" />
           </div>
           <div class="box box-15f">
-            <img src="img/15f.png" alt="">
+            <img src="img/15f.png" alt="" />
           </div>
         </div>
-       </section>
+      </section>
 
       <!-- SECTION 16: You’re my child. -->
-       <section class="section-16" style="display: flex; flex-direction: column; margin-bottom: 200px;">
+      <section
+        class="section-16"
+        style="display: flex; flex-direction: column; margin-bottom: 200px"
+      >
         <div class="boxes">
-          <div class="box box-16a" style="width: 35vw; margin: 75px 0 75px 0;" data-speed="1.1">
-            <img src="img/16a.png" alt="">
-            <div class="human" style="left: 90%; top: 50%;">Why?</div>
-            <div class="human" style="width: 50px; left: 90%; top: 65%;">Why do all this?</div>
+          <div
+            class="box box-16a"
+            style="width: 35vw; margin: 75px 0 75px 0"
+            data-speed="1.1"
+          >
+            <img src="img/16a.png" alt="" />
+            <div class="human" style="left: 90%; top: 50%">Why?</div>
+            <div class="human" style="width: 50px; left: 90%; top: 65%">
+              Why do all this?
+            </div>
           </div>
         </div>
-        <div class="box box-16c" style="width: 75vw;" data-speed="1.1">
-          <div class="god" style="width: 100px; right: 85%; bottom: 80%;">Because someday, you will become like me.</div>
-          <div class="god" style="width: 100px; right: 70%; bottom: 55%;">Because that’s what you are. You’re one of my kind.</div>
-          <div class="god" style="top: 60%; left: 50%;">You’re my child.</div>
-          <div class="human" style="top: 70%; left: 70%;">Woah. You mean I'm a god?</div>
-          <img src="img/16c.png" alt="">
+        <div class="box box-16c" style="width: 75vw" data-speed="1.1">
+          <div class="god" style="width: 100px; right: 85%; bottom: 80%">
+            Because someday, you will become like me.
+          </div>
+          <div class="god" style="width: 100px; right: 70%; bottom: 55%">
+            Because that’s what you are. You’re one of my kind.
+          </div>
+          <div class="god" style="top: 60%; left: 50%">You’re my child.</div>
+          <div class="human" style="top: 70%; left: 70%">
+            Woah. You mean I'm a god?
+          </div>
+          <img src="img/16c.png" alt="" />
         </div>
-       </section>
+      </section>
 
       <!-- SECTION 17: You’re a fetus. -->
-       <section class="section-17" style="padding-bottom: 250vh;">
-        <div class="box box-17a" style="position: relative; width: 100vw; height: 100vh;" data-speed="1.1">
-          <img class="box-17a-img" src="img/17a.png" style="position: absolute;" alt="">
-          <div class="box box-17b" style="position: absolute; width: 100vw; height: 100vh;">
-             <img src="img/17b.png" alt="">
+      <section class="section-17" style="padding-bottom: 250vh">
+        <div
+          class="box box-17a"
+          style="position: relative; width: 100vw; height: 100vh"
+          data-speed="1.1"
+        >
+          <img
+            class="box-17a-img"
+            src="img/17a.png"
+            style="position: absolute"
+            alt=""
+          />
+          <div
+            class="box box-17b"
+            style="position: absolute; width: 100vw; height: 100vh"
+          >
+            <img src="img/17b.png" alt="" />
           </div>
-          <div class="box box-17c" style="position: absolute; width: 100vw; height: 100vh;">
-            <img src="img/17c.png" alt="">
+          <div
+            class="box box-17c"
+            style="position: absolute; width: 100vw; height: 100vh"
+          >
+            <img src="img/17c.png" alt="" />
           </div>
         </div>
-        <div class="god" style="right: 65%;">No. Not yet.</div>
-        <div class="god" style="left: 65%; margin-top: 450px;">You’re a fetus. You’re still growing.</div>
-        <div class="god" style="width: 170px; margin-top: 850px; right: 65%;">Once you’ve lived every human life throughout all time, you will have grown enough to be born.</div>
-        <div class="human" style="margin-top: 1200px; left: 65%;">So the whole universe, it’s just...</div>
-        <div class="prose" style="position: absolute; margin-top: 2800px;">An egg.</div>
-        <div class="prose" style="position: absolute; margin-top: 3100px;">Now it’s time for you to move on to your next life.</div>
-       </section>
+        <div class="god" style="right: 65%">No. Not yet.</div>
+        <div class="god" style="left: 65%; margin-top: 450px">
+          You’re a fetus. You’re still growing.
+        </div>
+        <div class="god" style="width: 170px; margin-top: 850px; right: 65%">
+          Once you’ve lived every human life throughout all time, you will have
+          grown enough to be born.
+        </div>
+        <div class="human" style="margin-top: 1200px; left: 65%">
+          So the whole universe, it’s just...
+        </div>
+        <div class="prose" style="position: absolute; margin-top: 2800px">
+          An egg.
+        </div>
+        <div class="prose" style="position: absolute; margin-top: 3100px">
+          Now it’s time for you to move on to your next life.
+        </div>
+      </section>
 
       <!-- SECTION 18: And I sent you on your way. -->
-       <section class="section-18">
-        <p class="prose" style="color: black;">And I sent you on your way.</p>
-       </section>
+      <section class="section-18">
+        <p class="prose" style="color: black">And I sent you on your way.</p>
+      </section>
 
-       <section style="background-color: white;" data-speed=".95"></section>
-
+      <section style="background-color: white" data-speed=".95"></section>
+      <div
+        class="prose"
+        style="
+          margin: 50px;
+          background-color: white;
+          color: black;
+          padding: 10px;
+        "
+      >
+        Thanks for reading! Click
+        <a href="https://kyrartist.com/projects/the-egg-project">here</a> to
+        learn more about the making of this comic :)
+      </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/lib..." 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/lib..."
       integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="js/gsap.min.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/ScrollSmoother.min.js"></script>
